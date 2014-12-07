@@ -1,5 +1,5 @@
 /*!
- * ngToast v1.2.0 (http://tameraydin.github.io/ngToast)
+ * ngToast v1.2.1 (http://tameraydin.github.io/ngToast)
  * Copyright 2014 Tamer Aydin
  * Licensed under MIT (http://tameraydin.mit-license.org/)
  */
@@ -13,7 +13,7 @@
             messageStack = [];
 
         var defaults = {
-          class: 'success',
+          'class': 'success',
           dismissOnTimeout: true,
           timeout: 4000,
           dismissButton: false,
@@ -31,7 +31,7 @@
           }
 
           this.id = id;
-          this.class = defaults.class;
+          this['class'] = defaults['class'];
           this.dismissOnTimeout = defaults.dismissOnTimeout;
           this.timeout = defaults.timeout;
           this.dismissButton = defaults.dismissButton;
@@ -89,7 +89,6 @@
     ]);
 
 })(window, window.angular);
-
 (function(window, angular, undefined) {
   'use strict';
 
